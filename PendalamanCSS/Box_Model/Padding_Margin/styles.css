@@ -1,0 +1,29 @@
+p {
+    border: 4px solid #00a2c6;
+    width: 350px;
+    margin-left: 150px;
+  }
+  
+p.example {
+    padding: 10px;
+    margin-right: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+p.center{
+  margin: auto;
+}
+
+/*
+- Padding merupakan jarak antara area konten dan border. 
+Padding banyak diterapkan pada elemen jika elemen tersebut 
+menerapkan warna latar atau pun border. 
+Padding memberikan sedikit ruang sehingga konten 
+di dalam elemen dapat lebih nyaman untuk ditampilkan.
+
+- Margin adalah ruang atau jarak pada sebuah elemen. 
+Namun, jarak tersebut terletak diluar dari konten dan 
+border element. Margin digunakan untuk menjaga elemen 
+agar tidak bertabrakan satu sama lain atau dari tepi 
+jendela browser.
+*/

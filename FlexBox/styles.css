@@ -1,0 +1,70 @@
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 800px;
+    min-height: 500px;
+    margin-inline: auto;
+}
+
+.sale-item {
+    display: flex;
+    flex-flow: column;
+    flex: 0 1 300px;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 3px solid black;
+    background: #f9f9f9;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sale-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sale-item > img {
+    order: -1;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    transform: scale(1.01);
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1rem;
+}
+
+.sale-item p {
+    margin-block: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.sale-item > button {
+    margin-top: auto;
+    border-radius: 60px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-style: normal;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sale-item > button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sale-item:last-of-type img {
+    object-position: 20% center;
+}
